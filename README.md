@@ -34,20 +34,19 @@ Mutations (In/Outbound): Record all item movements, including incoming and outgo
 🚀 Getting Started
 Follow these simple steps to get the WareHouse API up and running on your local machine.
 
-1. Clone the Repository
+**1. Clone the Repository**
 Start by cloning the project to your local environment and navigating into its directory:
 
-Bash
 
 git clone https://github.com/AndiMPanguriseng/wareHouseApi.git
 cd wareHouseApi
-2. Set Up Environment Variables
+
+**2. Set Up Environment Variables**
 Copy the example environment file to create your own .env file:
 
-Bash
-
 cp .env.example .env
-3. Configure Database
+
+**3. Configure Database**
 Open your newly created .env file and update the database connection details to match your MySQL setup. Replace yourDatabaseName with the actual name of your database.
 
 Cuplikan kode
@@ -58,19 +57,18 @@ DB_PORT=3306
 DB_DATABASE=yourDatabaseName
 DB_USERNAME=root
 DB_PASSWORD=
-4. Generate Application Key
+
+**4. Generate Application Key**
 Generate a unique application key for your Laravel installation:
 
-Bash
-
 php artisan key:generate
-5. Run Migrations and Seed Database
+
+**5. Run Migrations and Seed Database**
 Execute the database migrations to create the necessary tables, and then seed the database with initial data:
 
-Bash
-
 php artisan migrate --seed
-6. Start the Development Server
+
+**6. Start the Development Server**
 Finally, start the Laravel development server:
 
 Bash
