@@ -21,6 +21,7 @@
 # 📦 WareHouse API
 
 API untuk sistem manajemen gudang yang mendukung:
+- user
 - Barang
 - Kategori
 - Supplier
@@ -37,3 +38,24 @@ Dibangun dengan **Laravel 11** + **MySQL**.
 ```bash
 git clone https://github.com/AndiMPanguriseng/wareHouseApi.git
 cd wareHouseApi
+
+### 2. Setup Environment
+```bash
+cp .env.example .env
+
+### 3. atur env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=yourDatabaseName
+DB_USERNAME=root
+DB_PASSWORD=
+
+### 4. Generate key
+php artisan key:generate
+
+### 5. Migrasi and seed
+php artisan migrate --seed
+
+php artisan serve
+
