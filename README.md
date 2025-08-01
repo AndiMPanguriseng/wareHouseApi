@@ -34,13 +34,12 @@ Dibangun dengan **Laravel 11** + **MySQL**.
 
 ## 🚀 Cara Menggunakan
 
-### 1. Clone Repository
+**1. Clone Repository**
 ```bash
 git clone https://github.com/AndiMPanguriseng/wareHouseApi.git
 cd wareHouseApi
 
-### 2. Setup Environment
-```bash
+**2.Setup Environtment **
 cp .env.example .env
 
 ### 3. atur env
